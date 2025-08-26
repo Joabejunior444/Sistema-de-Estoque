@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Estoque</title>
+  <link rel="stylesheet" href="/style/styles.css">
+</head>
+<body>
+
+  <h1>📦 Sistema de Estoque e Vendas</h1>
+
+  <div class="container">
+    
+    <div class="card">
+      <h2>Cadastrar Produto</h2>
+      <form>
+        <label for="produto">Produto:</label>
+        <input type="text" id="produto" placeholder="Ex: Camisa">
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" placeholder="Ex: 50">
+
+        <label for="preco">Preço (R$):</label>
+        <input type="number" id="preco" step="0.01" placeholder="Ex: 59.90">
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+
+    
+    <div class="card">
+      <h2>Registrar Venda</h2>
+      <form>
+        <label for="produtoVenda">Produto:</label>
+        <input type="text" id="produtoVenda" placeholder="Ex: Camisa">
+
+        <label for="qtdVenda">Quantidade:</label>
+        <input type="number" id="qtdVenda" placeholder="Ex: 2">
+
+        <button type="submit">Vender</button>
+      </form>
+    </div>
+
+    
+    <div class="card estoque">
+      <h2>Estoque Atual</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camisa</td>
+            <td>50</td>
+            <td>59,90</td>
+          </tr>
+          <tr>
+            <td>Calça Jeans</td>
+            <td>20</td>
+            <td>89,90</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
